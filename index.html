@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 4px solid black;
+            height: 80vh;
+            width: 20vw;
+            margin: auto;
+            border-radius: 20px;
+        }
+        .dp{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .nav{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(65, 130, 108);
+            height: 50px;
+            border-radius: 15px 15px 0px 0px;
+            font-size: 20px;
+            color: white;
+
+        }
+        .username{
+            display: flex;
+            gap: 0px;
+            flex-direction: column;
+            font-size: 10px;
+            margin: 20px 0px;
+        }
+        .icons{
+            display: flex;
+            gap: 12px;
+            padding-left: 20px;
+        }
+        .date{
+            margin: auto;
+            position: sticky; 
+            top: 0px;
+             background-color: rgb(190, 200, 209);
+            text-align: center;
+            width: 60px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .right{
+            display: inline-block;
+            text-align: left; 
+            margin: 10px;
+            background-color: rgb(69, 190, 61);
+            padding: 8px 12px;
+            border-radius: 10px;
+            max-width: 60%;
+            align-self: flex-end;
+        }
+        .left{
+            margin: 10px;
+            display: inline-block;
+            text-align: left;
+            margin: 10px;
+            background-color: rgb(200, 200, 200);
+            padding: 8px 12px;
+            border-radius: 10px;
+            max-width: 60%;
+            align-self: flex-start;
+        }
+        .text-img{
+            width: 120px;
+            height: 105px;
+        }
+        .msgs{
+            overflow: scroll;
+            scrollbar-width: none;
+            height: 63vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .text-box{
+            position: fixed;
+            height: 40px;
+            width: 20%;
+            display: inline;
+            background-color: rgb(244, 231, 231);
+            z-index: 10;
+            border-radius: 0px 0px 15px 15px;
+        }
+        .doc{
+            display: flex;
+            gap: 6px;
+            padding:10px 10px;
+            align-items: center;
+        }
+        .input-msg{
+            width: 65%;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            background-color: #f1f1f1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="nav">
+            <i class="fa-solid fa-arrow-left"></i>
+            <img class="dp" src="dp.avif" alt="dp">
+             <div class="username">
+                <p class="username" style="font-size: 16px; margin-top: -0.1em;">BHAVANI</p>
+                <span style="margin-top: -2em;">last seen 4:00pm</span>
+             </div>
+             <div class="icons">
+             <i class="fa-solid fa-video"></i>
+             <i class="fa-solid fa-phone"></i>
+             <i class="fa-solid fa-ellipsis-vertical"></i>
+           </div>
+        </header>
+        <section class="msgs">
+            <p class="date">26 Jan</p>
+            <div class="left">Hey, I was thinking of cooking biryani today! 🍛</div>
+            <div class="right">Wow! That sounds amazing. Which type of biryani?</div>
+            <div class="left">Hyderabadi Dum Biryani! I found a great recipe online. 😍</div>
+            <div class="right">That&apos;s my favorite! Do you need any help?</div>
+            <div class="left">Yes! How long should I marinate the chicken? 🤔</div>
+            <div class="right">At least 2 hours for the best flavor. If you have time, overnight is even better! 😊</div>
+            <div class="left">okay i will msg you tmr for further process.</div>
+            
+            <p class="date">27 Jan</p>
+            <div class="left">Okay, I marinated it last night. Now what&apos;s next?</div>
+            <div class="right">Great! Now fry onions until golden brown, then cook the rice separately. 🍚</div>
+            <div class="left">Got it! Should I layer the chicken and rice now?</div>
+            <div class="right">Yes! Put the marinated chicken at the bottom and layer the rice on top. Then add saffron milk and ghee. 😋</div>
+            <div class="left">This smells so good! How long should I cook it on dum?</div>
+            <div class="right">About 30 minutes on low flame. Don&apos;t open the lid too often! 🔥</div>
+            <div class="left">okay.</div>
+            <div class="left">OMG! The biryani turned out amazing! 😍🔥</div>
+            <div class="right">I told you! Homemade biryani is the best. Send me a pic! 📸</div>
+            <div class="left"><img class="text-img" src="biryani.jpg" alt=""></div>
+            <div class="left">Next time, I&apos;ll make extra and invite you over. 😁</div>
+            <div class="right">Yay! I&apos;m always ready for biryani. 😂</div>
+            <div class="left">okay bye then</div>
+            <div class="right">Bye</div>
+            <p class="date">28 Jan</p>
+            <div class="class">hey likku listen..</div>
+            <div class="left">I just served the biryani to my family, and they absolutely loved it! 😍🔥</div> 
+            <div class="right">That&apos;s amazing! What did they say? 🤩</div> 
+            <div class="left">They said it tastes just like restaurant-style biryani! My dad even had a second serving. 😂</div> 
+            <div class="right">Wow, that&apos;s a big compliment! Nothing beats homemade food made with love. ❤️</div> 
+            <div class="left">My mom said I should cook more often. I think I just got myself a new job at home. 😂</div> 
+            <div class="right">Hahaha! Well, at least you&apos;ll get more practice. Maybe you&apos;ll become a biryani master soon. 👨‍🍳😆</div> 
+            <div class="left">I might have to! My siblings were literally fighting over the last spoon of biryani. 🤣</div> 
+            <div class="right">That&apos;s how you know you nailed it! Next time, make a bigger batch. 😂</div> 
+            <div class="left">Definitely! Also, thanks for all the tips. Couldn't have done it without you. 😇</div> 
+            <div class="right">Anytime! Now, when are you inviting me over for biryani? 👀</div> 
+            <div class="left">Haha, soon! Next weekend, maybe? You better come hungry. 😁</div> 
+            <div class="right">Always hungry for biryani! Can&apos;t wait. 🤩</div>
+             <div class="left">Alright, talk soon! Bye. 😃</div> 
+            <div class="right">Bye! Enjoy your chef status at home. 😂👨‍🍳</div>
+        </section>
+        <section class="text-box">
+            <div class="doc">
+                <i class="fa-regular fa-face-smile emoji-icon"></i>
+                <input class="input-msg" type="text" placeholder="Type a message..." >
+                <i  class="fa-solid fa-paperclip attach-icon"></i>
+                <i class="fa-solid fa-camera camera-icon"></i>
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
